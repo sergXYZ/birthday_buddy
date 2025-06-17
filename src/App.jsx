@@ -8,11 +8,13 @@ const App = () => {
   return (
     <>
       <main>
-        <section>
+        <section className="container">
           <h3>{people.length} birthdays today</h3>
           <List people={people} />
 
-          <button onClick={() => setPeople([])}>Clear list</button>
+          <button onClick={() => setPeople([])} className="btn btn-block">
+            Clear list
+          </button>
         </section>
       </main>
     </>
